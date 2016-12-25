@@ -16,7 +16,7 @@ function setDate() {
 	minuteHand.style.transform = `rotate(${minutesDegrees}deg)`; // rotate
 
 	const hour = now.getHours(); // get the hour
-	const hourDegrees = ((hour / 24 * 360) + 90) % 360; // get the hour degree value
+	const hourDegrees = ((hour / 12 * 360) + 90) % 360; // get the hour degree value
 	hourHand.style.transform = `rotate(${hourDegrees}deg)`; // rotate
 
 	audio.currentTime = 0;
