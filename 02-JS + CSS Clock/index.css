@@ -6,9 +6,7 @@ html {
 }
 
 body {
-	font-size: 2rem;
 	display:flex;
-	flex:1;
 	min-height: 100vh;
 	justify-content: center;
 	align-items: center;
@@ -16,6 +14,7 @@ body {
 
 p {
 	position: absolute;
+	font-size: 2.22em
 }
 
 .clock {
@@ -38,7 +37,6 @@ p {
 	height: 5px;
 	top: 50%;
 	left: 5%;
-	background: black;
 	position: absolute;
 	transform-origin: 100%;
 	transform: rotate(90deg);
@@ -50,6 +48,7 @@ p {
 .hour-hand {
 	width: 35%;
 	left: 15%;
+	background: black;
 }
 
 .min-hand {
@@ -58,4 +57,24 @@ p {
 
 .second-hand {
 	background: blue;
+}
+
+.twelve {
+	left: 46%;
+	top: -3%;
+}
+
+.three {
+	right: 3%;
+	top: 39%;
+}
+
+.six {
+	left: 46%;
+	bottom: -3%;
+}
+
+.nine {
+	left: 3%;
+	top: 39%;
 }
