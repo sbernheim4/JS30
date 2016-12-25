@@ -1,7 +1,7 @@
 html {
-	background:#018DED url(http://unsplash.it/1500/1000?image=881&blur=50);
+	background:#018DED url('images/background.jpg');
 	background-size:cover;
-	font-family:'helvetica neue';
+	font-family:'Open Sans, helvetica neue';
 	font-size: 10px;
 }
 
@@ -21,7 +21,7 @@ p {
 	transform: scale(1.8);
 	width: 30rem;
 	height: 30rem;
-	border: 15px solid white;
+	border: 15px solid black;
 	border-radius: 50%;
 	margin: 0px auto;
 	position: absolute;
@@ -57,7 +57,7 @@ p {
 }
 
 .second-hand {
-	background: blue;
+	background: black;
 }
 
 .twelve {
