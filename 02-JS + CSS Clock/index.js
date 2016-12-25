@@ -1,20 +1,22 @@
+// get the html elements
 const secondHand = document.querySelector('.second-hand');
 const minuteHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
 
 function setDate() {
-	const now = new Date();
-	const seconds = now.getSeconds();
-	const secondsDegrees = (seconds / 60 * 360) + 90;
-	secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+	const now = new Date(); // get the current date
 
-	const minutes = now.getMinutes();
-	const minutesDegrees = (minutes / 60 * 360) + 90;
-	minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
+	const seconds = now.getSeconds(); // get the seconds
+	const secondsDegrees = ((seconds / 60 * 360) + 90) % 360; // get the seconds degree value
+	secondHand.style.transform = `rotate(${secondsDegrees}deg)`; // rotate
 
-	const hour = now.getMinutes();
-	const hourDegrees = (minutes / 12 * 360) + 90;
-	hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+	const minutes = now.getMinutes(); // get the minutes
+	const minutesDegrees = ((minutes / 60 * 360) + 90) % 360; // get the hour degree value
+	minuteHand.style.transform = `rotate(${minutesDegrees}deg)`; // rotate
+
+	const hour = now.getHours(); // get the hour
+	const hourDegrees = ((hour / 24 * 360) + 90) % 360; // get the hour degree value
+	hourHand.style.transform = `rotate(${hourDegrees}deg)`; // rotate
 }
 
 setInterval(setDate, 1000);
