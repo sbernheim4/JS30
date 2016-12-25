@@ -19,7 +19,9 @@ function setDate() {
 	const hourDegrees = ((hour / 12 * 360) + 90) % 360; // get the hour degree value
 	hourHand.style.transform = `rotate(${hourDegrees}deg)`; // rotate
 
+	// reset the audio time
 	audio.currentTime = 0;
+	// play the sound
 	audio.play();
 }
 
