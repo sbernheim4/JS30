@@ -21,7 +21,7 @@ p {
 .clock {
 	width: 30rem;
 	height: 30rem;
-	border: 1px solid white;
+	border: 15px solid white;
 	border-radius: 50%;
 	margin: 0px auto;
 	position: absolute;
@@ -31,7 +31,6 @@ p {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	transform: translateY(-3px); /* account for the height of the clock hands */
 }
 
 .hand {
@@ -45,7 +44,7 @@ p {
 	transform: rotate(90deg);
 	transition-timing-function: cubic-bezier(0.04, 3.59, 0.58, 1);
 	border-radius: 50%;
-	opacity: .3;
+	opacity: .8;
 }
 
 .hour-hand {
@@ -55,4 +54,8 @@ p {
 
 .min-hand {
 	background: red;
+}
+
+.second-hand {
+	background: blue;
 }
