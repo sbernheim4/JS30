@@ -18,6 +18,7 @@ p {
 }
 
 .clock {
+	transform: scale(1.8);
 	width: 30rem;
 	height: 30rem;
 	border: 15px solid white;
@@ -64,17 +65,57 @@ p {
 	top: -3%;
 }
 
+.one {
+	top: 0%;
+	right: 25%;
+}
+
+.two {
+	right: 8%;
+	top: 16%;
+}
+
 .three {
 	right: 3%;
 	top: 39%;
 }
 
+.four {
+	bottom: 15%;
+	right: 10%;
+}
+
+.five {
+	bottom: 0%;
+	right: 26%;
+}
+
 .six {
-	left: 46%;
-	bottom: -3%;
+	left: 48%;
+	bottom: -6%;
+}
+
+.seven {
+	bottom: 0%;
+	left: 27%;
+}
+
+.eight {
+	left: 10%;
+	bottom: 15%;
 }
 
 .nine {
 	left: 3%;
 	top: 39%;
+}
+
+.ten {
+	left: 8%;
+	top: 18%;
+}
+
+.eleven {
+	top: 2%;
+	left: 24%;
 }
