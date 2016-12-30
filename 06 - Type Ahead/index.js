@@ -9,7 +9,9 @@ fetch(endpoint)
 // given a word and an array of all cities, return an array of cities that
 // match the word using regex
 function findMatches(wordToMatch, cities) {
-	return cities.filter(place => { const regex = new RegExp(wordToMatch, 'gi'); return place.city.match(regex) || place.state.match(regex);
+	return cities.filter(place => {
+		const regex = new RegExp(wordToMatch, 'gi');
+		return place.city.match(regex) || place.state.match(regex);
 	});
 };
 
