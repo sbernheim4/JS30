@@ -1,5 +1,4 @@
 function playSound(e) {
-
 	// get the audio element for the right key using the keyCode value on the event
 	const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
 	// get the key element for the right key using the keyCode value on the event
